@@ -57,3 +57,39 @@ RUN pip install -r requirements.txt
 
 CMD ["python", "bot.py"]
 
+```
+Requirements
+Python 3.8+
+Libraries:
+discord.py (for Discord API handling)
+yt-dlp (for downloading audio from YouTube)
+spotipy (for Spotify API integration)
+asyncio (for handling asynchronous operations)
+How to Run
+1. Set Up the Environment
+Copy the config.json file to your project folder and enter your API credentials for Spotify and other necessary settings.
+2. Install Required Libraries
+In the terminal, run:
+```bash
+pip install -r requirements.txt
+```
+---
+3. Run the Bot
+In the terminal, run:
+```bash
+python bot.py
+```
+---
+4. Docker (Optional)
+If you want to run the bot in Docker, use:
+```bash
+docker build -t discord-music-bot .
+docker run -d discord-music-bot
+```
+---
+Logging
+The bot logs all events and errors into the bot.log file, which helps in diagnosing issues if they arise. Ensure you check the log for troubleshooting.
+Contributing
+Feel free to fork this repository, open issues, or submit pull requests. Contributions are always welcome!
+
+
